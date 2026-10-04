@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: "Pixelify Sans", sans-serif;
-  background-color: white;
+  background-color: #a0d5dd;
   background-size: 6px 6px;
 }
 ul {
@@ -41,4 +41,63 @@ ul li a:hover {
 .logo img {
   height: 36px;
   display: inline;
+}
+.intro{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 24px;
+}
+.location {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.intro h1 {
+  font-size: clamp(80px, 12vw, 160px); 
+  line-height: 0.9;
+  margin: 16px 0 32px;
+  
+}
+.tagline {
+  font-size: clamp(24px, 4vw, 56px);
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 32px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #1e1e1e;
+  border-radius: 999px;
+  box-shadow: 4px 4px 0 #1e1e1e;
+  background: white;
+  color: #1e1e1e;
+  text-decoration: none;
+
+
+  background: linear-gradient(#1e1e1e, #1e1e1e) left / 0% 100% no-repeat, white;
+  transition: background-size 0.4s ease, color 0.4s ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.stats {
+  display: flex;
+  gap: 56px;
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #999;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.stats span {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #1e1e1e;
 }
