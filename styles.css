@@ -107,7 +107,7 @@ ul li a:hover {
 .section{
   background: #F1FAFF;
   border-top: 4px solid #ffc61b;
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 120px 24px;
 }
