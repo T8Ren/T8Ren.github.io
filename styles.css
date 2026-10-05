@@ -4,21 +4,30 @@
   font-family: "disketmono";
   src: url(Disket-Mono-Regular.ttf)
 }
+
+/* body*/
 body {
   margin: 0;
   font-family: "disketmono";
   background-color: #a0d5dd;
   background-size: 6px 6px;
 }
+
+/*navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: #4587bb;
+  border-bottom: 4px solid #ffc61b;
   display: flex;
   justify-content: right;
   align-items: center;
-  position: sticky;
 }
 
 ul li a {
@@ -34,6 +43,7 @@ ul li a:hover {
     transform: translateY(-4px);  
 }
 
+/*intro page*/ 
 
 .intro{
   max-width: 1000px;
@@ -50,26 +60,6 @@ ul li a:hover {
   font-size: clamp(80px, 12vw, 160px); 
   line-height: 0.9;
   margin: 16px 0 32px;
-
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(255, 208, 0); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(255, 208, 0); }
 }
 
 .tagline {
@@ -83,15 +73,11 @@ ul li a:hover {
   display: inline-block;
   padding: 12px 24px;
   border: 2px solid #1e1e1e;
-  border-radius: 999px;
+  
   box-shadow: 4px 4px 0 #1e1e1e;
-  background: white;
+  background: #F1FAFF;
   color: #1e1e1e;
   text-decoration: none;
-
-
-  background: linear-gradient(#1e1e1e, #1e1e1e) left / 0% 100% no-repeat, white;
-  transition: background-size 0.4s ease, color 0.4s ease;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -115,3 +101,15 @@ ul li a:hover {
   letter-spacing: 0;
   color: #1e1e1e;
 }
+
+/*about me*/
+
+.section{
+  background: #F1FAFF;
+  border-top: 4px solid #ffc61b;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 24px;
+}
+
+
